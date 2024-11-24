@@ -1,0 +1,52 @@
+/*this is a stylesheet*/
+
+body { /*body here is a selector it points to the tag that style should apply to*/
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; /*fonts are taken from the availabe in the computer. The browser will then start with the first font if its not present then it will move onto the next font and so forth*/
+    background-color: aliceblue;
+}
+
+h1 {
+    border: 5px dotted red;
+}
+
+blockquote {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.5rem; /*rem is the relative size to the browser default font size. This will allow us to dynamically size this font depending on the device on which this will load on*/
+    text-align: center;
+    font-style: italic;
+}
+
+cite {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/*classes in css start with period. Any tag with this class will now follow the styling of this class*/
+.important {
+    font-weight: bold;
+    color: red;
+}
+
+ul a:link { /*this means that the only a tags inside of ul will have this style i.e decsendants of ul that are a*/
+    color: blue;
+}
+
+a:link {
+    color: orange;
+}
+a:visited {
+    color: cadetblue;
+}
+
+a:hover {
+    color: gold;
+    font-weight: bold;
+}
+
+a.back { /*this means that only for a tags with the class back*/
+    color: palevioletred;
+}
+
+#id {
+    color: magenta;
+}
